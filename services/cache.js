@@ -1,4 +1,5 @@
 import redis from 'redis';
+import { CACHE_TTL } from '../config/constants.js';
 
 const client = redis.createClient({
   url: process.env.REDIS_URL || 'redis://localhost:6379'
